@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-labelledby="title desc">
-  <title id="title">CyberTrace shield logo</title>
-  <desc id="desc">A navy shield with a cyan circuit trace and an amber alert point.</desc>
-  <path fill="#07111e" stroke="#52dcc5" stroke-width="3" d="M48 5 82 18v25c0 23-14 39-34 48C28 82 14 66 14 43V18L48 5Z"/>
-  <path fill="#12283d" stroke="#2b4962" stroke-width="2" d="M48 15 72 24v19c0 16-9 29-24 38-15-9-24-22-24-38V24l24-9Z"/>
-  <path fill="none" stroke="#52dcc5" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M29 43h12l7 8 11-16h10"/>
-  <path fill="none" stroke="#ffb45c" stroke-linecap="round" stroke-width="3" d="M30 63h14M58 63h8"/>
-  <circle cx="70" cy="35" r="5" fill="#ffb45c" stroke="#07111e" stroke-width="2"/>
-</svg>
