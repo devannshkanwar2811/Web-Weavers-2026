@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Contact the student team behind CyberTrace and learn how to discuss the project.">
+  <title>Contact Us | CyberTrace</title>
+  <link rel="stylesheet" href="CyberTrace/style.css">
+  <link rel="stylesheet" href="CyberTrace/vibe.css">
+  <link rel="icon" type="image/svg+xml" href="CyberTrace/logo.svg">
+  <script src="CyberTrace/common.js" defer></script>
+  <script src="CyberTrace/vibe.js" defer></script>
+  <script src="CyberTrace/contact.js" defer></script>
+  <style>
+    .contact-layout { display:grid; grid-template-columns:minmax(0, .85fr) minmax(0, 1.15fr); gap:20px; align-items:start; margin-top:28px; }
+    .contact-form { display:grid; gap:16px; }
+    .contact-field { display:grid; gap:7px; }
+    .contact-field label { color:var(--ink); font-size:12px; font-weight:800; letter-spacing:.04em; text-transform:uppercase; }
+    .contact-field input, .contact-field select, .contact-field textarea { width:100%; min-width:0; padding:12px 13px; border:1px solid var(--line); border-radius:4px; background:#091522; color:var(--ink); font:inherit; font-size:14px; }
+    .contact-field textarea { min-height:145px; resize:vertical; }
+    .contact-field input:focus-visible, .contact-field select:focus-visible, .contact-field textarea:focus-visible { outline:2px solid var(--neon); outline-offset:2px; }
+    .contact-note { padding:12px 14px; border-left:3px solid var(--amber); background:rgba(255,180,92,.07); color:var(--ink-soft); font-size:12px; line-height:1.6; }
+    .contact-status { min-height:24px; color:var(--neon); font-size:13px; font-weight:700; }
+    .contact-details { display:grid; gap:12px; }
+    .contact-detail { padding:17px; border:1px solid var(--line); border-radius:5px; background:rgba(16,31,49,.8); }
+    .contact-detail h3 { margin-bottom:7px; color:var(--neon); font-size:16px; }
+    .contact-detail p { margin-bottom:0; color:var(--ink-soft); font-size:13px; }
+    @media (max-width:690px) { .contact-layout { grid-template-columns:1fr; } }
+  </style>
+</head>
+<body>
+<div class="site-shell">
+  <header class="site-header">
+    <a class="brand" href="CyberTrace/index.html" aria-label="CyberTrace home"><img class="brand-mark" src="CyberTrace/logo.svg" alt=""> CYBER<span>TRACE</span></a>
+    <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="CyberTrace/index.html">Home</a>
+      <a href="CyberTrace/investigate.html">Investigation Lab</a>
+      <a href="CyberTrace/report.html">Case Report</a>
+      <a href="about.html">About Us</a>
+      <a class="active" href="contact.html" aria-current="page">Contact</a>
+      <a class="nav-cta" href="CyberTrace/investigate.html">Open case <span aria-hidden="true">↗</span></a>
+    <a href="CyberTrace/analyze.html">Message Analyzer</a></nav>
+  </header>
+  <main class="container inner-page">
+    <div class="page-intro">
+      <div><span class="eyebrow">CONTACT / PROJECT DISCUSSION</span><h1>Start a <em>conversation.</em></h1><p>Questions, feedback, or ideas for improving CyberTrace? Use the demo form below or explore the project notes.</p></div>
+      <div class="case-stamp">CYBERTRACE <strong>CONTACT</strong><small>STUDENT PROJECT · 2026</small></div>
+    </div>
+    <div class="contact-layout">
+      <section class="panel contact-details" aria-labelledby="contact-info-heading">
+        <span class="panel-overline">BEHIND THE PROJECT</span>
+        <h2 id="contact-info-heading">What can you contact us about?</h2>
+        <article class="contact-detail"><h3>Project feedback</h3><p>Share suggestions about the investigation flow, clue explanations, accessibility, or visual design.</p></article>
+        <article class="contact-detail"><h3>Cyber-safety learning</h3><p>Discuss how this educational simulation could be used to practise safer decisions online.</p></article>
+        <article class="contact-detail"><h3>Collaboration ideas</h3><p>Suggest a classroom demonstration, a new fictional case, or another way to improve the learning experience.</p></article>
+        <p class="contact-note">Privacy note: CyberTrace is a static, offline-friendly student project. This form does not send messages to a server, and the entered details are not saved. Do not enter private or sensitive information.</p>
+      </section>
+      <section class="panel" aria-labelledby="contact-form-heading">
+        <span class="panel-overline">SEND A MESSAGE (DEMO)</span>
+        <h2 id="contact-form-heading">Tell us what you think.</h2>
+        <form id="contact-form" class="contact-form">
+          <div class="contact-field"><label for="contact-name">Name</label><input id="contact-name" name="name" autocomplete="name" maxlength="80" required></div>
+          <div class="contact-field"><label for="contact-email">Email address</label><input id="contact-email" name="email" type="email" autocomplete="email" maxlength="254" required></div>
+          <div class="contact-field"><label for="contact-topic">Topic</label><select id="contact-topic" name="topic" required><option value="">Choose a topic</option><option value="feedback">Project feedback</option><option value="learning">Cyber-safety learning</option><option value="collaboration">Collaboration idea</option><option value="other">Other</option></select></div>
+          <div class="contact-field"><label for="contact-message">Message</label><textarea id="contact-message" name="message" minlength="10" maxlength="1200" required placeholder="Write your feedback (10–1200 characters)."></textarea></div>
+          <button class="btn primary" type="submit">Validate demo message <span aria-hidden="true">↗</span></button>
+          <p id="contact-status" class="contact-status" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </div>
+    <section class="section callout"><div><span class="eyebrow">READY TO EXPLORE?</span><h2>Put the clues to the test.</h2><p>Try the fictional investigation and review your case report.</p></div><a class="btn primary" href="CyberTrace/investigate.html">Start investigation <span>→</span></a></section>
+  </main>
+  <footer class="footer container"><span>© <span data-year></span> CyberTrace · Student technology project</span><span>Learn to verify before you trust.</span></footer>
+</div>
+</body>
+</html>
